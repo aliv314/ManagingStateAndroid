@@ -40,6 +40,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun LoginScreen(){
     val context = LocalContext.current
+
+    /* Coursera used this as their state management variables.
+    var username by remember {
+        mutableStateOf(TextFieldValue(""))
+    }
+    var password by remember {
+        mutableStateOf(TextFieldValue(""))
+    }
+    */
     var username by remember{ mutableStateOf("") }
     var password by remember{ mutableStateOf("") }
 
