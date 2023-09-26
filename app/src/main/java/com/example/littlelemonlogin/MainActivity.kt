@@ -53,13 +53,13 @@ fun LoginScreen(){
             contentDescription = "Logo Image"
         )
         TextField(
-            value = "",
-            onValueChange = {username += it},
+            value = username,
+            onValueChange = {username = it},
             label = { Text(text = "Username") },
         )
         TextField(
-            value = "",
-            onValueChange = {password += it},
+            value = password,
+            onValueChange = {password = it},
             label = { Text(text = "Password") },
         )
         Button(
