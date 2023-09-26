@@ -53,7 +53,13 @@ fun LoginScreen(){
             contentDescription = "Logo Image"
         )
         TextField(
+            //Value will display the username value
             value = username,
+            /*
+            1. Text field takes in new input.
+            2. When it changes, the state changes.
+            3. When the state changes, the textfield input changes.
+             */
             onValueChange = {username = it},
             label = { Text(text = "Username") },
         )
@@ -64,6 +70,7 @@ fun LoginScreen(){
         )
         Button(
             onClick = {
+                //Simple if with Toast
                 if ((username == "Darian") and (password == "littlelemon")){
                     Toast.makeText(context, "Welcome to Little Lemon!", Toast.LENGTH_SHORT).show()
                 }else{
